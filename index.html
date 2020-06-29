@@ -20,14 +20,14 @@
                 <h3>Форма регистрации</h3>
                 <fieldset class="form__fieldset">
                     <div class="form__field">
-                        <input class="form__input" type="text" name="name" pattern="[А-ЯЁ]{1}[а-яё\s]+?(-[А-ЯЁ]{1}[а-яё\s]+)?" placeholder="Имя" required minlength="2" maxlength="20"/>
+                        <input class="form__input" type="text" name="name" pattern="[А-ЯЁ][а-яё\s]+?(-[А-ЯЁ][а-яё\s]+)?" placeholder="Имя" required minlength="2" maxlength="20"/>
                     </div>
                     <div class="form__field">
                         <input class="form__input" type="text" name="email" pattern="([a-z]+(\w+)?-?([a-z0-9]+)?)+@([a-z0-9]+(-?\w+-?[a-z0-9])?.)+[a-zA-Z]{2,}" placeholder="E-Mail" required/>
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="(\+\d\(\d{3}\)\s?\d{3}-\d{2}-\d{2})|(\+\d\s\d{3}-\d{3}-\d{2}-\d{2})|(\+\d{11})|(\d{11})" minlength="11" maxlength="18"  required/>
+                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="(\+7\(\d{3}\)\s?\d{3}-\d{2}-\d{2})|(\+7\s\d{3}-\d{3}-\d{2}-\d{2})|(\+7\d{10})|(8\d{10})" minlength="11" maxlength="18"  required/>
                         <span class="form__error">Недопустимый формат номера</span>
                     </div>
                     <div class="form__field">
